@@ -9,6 +9,7 @@
 var shuffleSequence = seq("consent", "instructions", seq(startsWith("practice")), /* sepWith("sep", seq(shuffle(randomize(startsWith("filler")), shuffle(randomize(startsWith("formal")), randomize(startsWith("informal")))))),*/ "questionnaire");
 var centerItems = true;
 
+var d3 = require('d3');
 
 var defaults = [
 
@@ -36,12 +37,12 @@ var defaults = [
       saveReactionTime: true
   }
 ];
-/*
+
 var items = [
   /*
   Do we need separators?
   Is there a way to import from CSV?
-  *
+  */
 
   //ends after timer (1000ms)
   ["sep", "Separator", {transfer: 1000, normalMessage: "Merci d'attendre la prochaine phrase."}],
@@ -52,7 +53,7 @@ var items = [
 
   /*
   INTRODUCTION
-  *
+  */
 
   ["consent",
     //type
@@ -107,8 +108,11 @@ var items = [
           "Option 2"]
         }
       ],
-  *
+  */
 
 
 ];
-*/
+
+d3.csv("stim1.csv").then(function(data) {
+  console.log(data[0]);
+});
