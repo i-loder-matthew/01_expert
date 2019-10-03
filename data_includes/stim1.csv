@@ -1,0 +1,19 @@
+﻿item,context_type,wh_word,option_1,option_2,context_text,information_state
+1,expert,quoi,On va manger quoi ce soir?,Qu'est-ce qu'on va manger ce soir,Un fils à son père qui rentre du marché:,"Le fils: Vu que tu as fait les courses pour le dîner, dis-moi"
+2,non-expert,quoi,On va manger quoi ce soir?,Qu'est-ce qu'on va manger ce soir,Un fils à son père qui est rentré du boulot:,"Le fils: Vu que j'ai super faim, dis-moi:"
+3,expert,oú,"Elles sont oú, les clés?","Où elles sont, les clés?",Une femme qui les clés de voiture à son mari,"La femme: Comme tu as rangé la voiture, dis-moi:"
+4,non-expert,oú,"Elles sont oú, les clés?","Où elles sont, les clés?",Une femme qui les clés de voiture à son mari,"La femme: Comme je suis super pressée, dis-moi:"
+5,expert,combien,Ça coute à peu près combien une voiture comme ca?,Combien ça coute à peu près une voiture comme ça?,Jean à son amie Margot qui a acheté une Honda Civic:,"Jean: Comme tu viens d'en acheter une, au-fait"
+6,non-expert,combien,Ça coute à peu près combien une voiture comme ça?,Combien ça coute à peu près une voiture comme ça?,Jean montre une Honda Civic dans la rue à son amie Margot.,"Jean: Comme j'ai vraiment besoin d'en acheter une, au-fait:"
+7,expert,quoi,"Il a fait quoi, le maire?",Qu'est-ce qu'il a fait le maire?,"À propos du dernier scandale à la mairie, Jean à son ami qui est conseiller municipale","Vu qu'ils parlent tous du ça, dis-moi:"
+8,non-expert,quoi,"Il a fait quoi, le maire?",Qu'est-ce qu'il a fait le maire?,"À propos du dernier scandale à la mairie, Jean à son copain dans un bar:","Vu qu'ils parlent tous du ça, dis-moi:"
+9,expert,oú,"Il est où, ce livre?","Où est il, ce livre?",À la bibliothèque: Amélie qui cherche le livre Les Misérable à son ami Marc:,"Amélie: Comme tu bosses à la bibliothèque, au fait:"
+10,non-expert,oú,"Il est où, ce livre?","Où est il, ce livre?",À la bibliothèque: Amélie qui cherche le livre Les Misérable à son ami Marc:,"Amélie: Comme le prof veut qu'on le lise, au fait:"
+11,expert,combien,"Il coute à peu près combien, ce jean?","Combien il coute à peu près, ce jean?","Nicole à son ami Marc, qui travaille dans le magazin:","Nicole: Vu que c'est dans ton rayon, au fait:"
+12,non-expert,combien,"Il coute à peu près combien, ce jean?","Combien il coute à peu près, ce jean?",Nicole montre un jean à son ami Marc dans la vitrine,Nicole: Vu que c'est parfait pour la soirée de samedi au fait:
+13,expert,quoi,Il y a quoi à reviser pour le prochain examen?,Qu'est-ce qu'il y a à reviser pour le prochain examen?,"Adele à son amie Marie, qui prends des bonnes notes dans le cours:","Adele: Comme je suis sûre que tu as bien écouté, au-fait:"
+14,non-expert,quoi,Il y a quoi à reviser pour le prochain examen?,Qu'est-ce qu'il y a à reviser pour le prochain examen?,"Marie à son amie Adele, qui est parfois distraite:","Marie: Comme j'étais pas là au dernier cours, au fait"
+15,expert,oú,Il s'arrete où le train de dix heures?,Où il s'arrete le train de dix heures?,Antoni à son ami Jean qui prend souvent le train: ,"Vu que tu as les horaires dans la main, dis-moi:"
+16,non-expert,oú,Il s'arrete où le train de dix heures?,Où il s'arrete le train de dix heures?,Antoni à son ami Jean devant la gare:,"Vu qu'il faut que je parte toute suite, dis-moi"
+17,expert,combien,"Il coute combien, le plat du jour?","Combien il coute, le plat du jour?",Deux amis dans un restaurant:,"Vu que tu viens ici tous les jours, dis-moi:"
+18,non-expert,combien,"Il coute combien, le plat du jour?","Combien il coute, le plat du jour?",Deux amis dans un restaurant:,Vu que j'ai pas trop faim:
