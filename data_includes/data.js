@@ -95,7 +95,7 @@ var items = [
        as: ["Jamais, je ne dirais ce-là",
             "Je ne  dirais jamais ce-là"]
         }
-      ]
+      ],
 
 
   // TARGET ITEMS
@@ -110,30 +110,23 @@ var items = [
       ],
   */
 
-  ["expert_1", "Question", { q: "Un fils à son père qui rentre du marché: \n Le fils: Vu que tu as fait les courses pour le dîner, dis-moi", as: "[On va manger quoi ce soir?", "Qu'est-ce qu'on va manger ce soir"] }}],
-  ["non-expert_2", "Question", { q: "Un fils à son père qui est rentré du boulot: \n Le fils: Vu que j'ai super faim, dis-moi:", as: "[On va manger quoi ce soir?", "Qu'est-ce qu'on va manger ce soir"] }}],
-  ["expert_3", "Question", { q: "Une femme qui les clés de voiture à son mari \n La femme: Comme tu as rangé la voiture, dis-moi:", as: "[Elles sont oú, les clés?", "Où elles sont, les clés?"] }}],
-  ["non-expert_4", "Question", { q: "Une femme qui les clés de voiture à son mari \n La femme: Comme je suis super pressée, dis-moi:", as: "[Elles sont oú, les clés?", "Où elles sont, les clés?"] }}],
-  ["expert_5", "Question", { q: "Jean à son amie Margot qui a acheté une Honda Civic: \n Jean: Comme tu viens d'en acheter une, au-fait", as: "[Ça coute à peu près combien une voiture comme ca?", "Combien ça coute à peu près une voiture comme ça?"] }}],
-  ["non-expert_6", "Question", { q: "Jean montre une Honda Civic dans la rue à son amie Margot. \n Jean: Comme j'ai vraiment besoin d'en acheter une, au-fait:", as: "[Ça coute à peu près combien une voiture comme ça?", "Combien ça coute à peu près une voiture comme ça?"] }}],
-  ["expert_7", "Question", { q: "À propos du dernier scandale à la mairie, Jean à son ami qui est conseiller municipale \n Vu qu'ils parlent tous du ça, dis-moi:", as: "[Il a fait quoi, le maire?", "Qu'est-ce qu'il a fait le maire?"] }}],
-  ["non-expert_8", "Question", { q: "À propos du dernier scandale à la mairie, Jean à son copain dans un bar: \n Vu qu'ils parlent tous du ça, dis-moi:", as: "[Il a fait quoi, le maire?", "Qu'est-ce qu'il a fait le maire?"] }}],
-  ["expert_9", "Question", { q: "À la bibliothèque: Amélie qui cherche le livre Les Misérable à son ami Marc: \n Amélie: Comme tu bosses à la bibliothèque, au fait:", as: "[Il est où, ce livre?", "Où est il, ce livre?"] }}],
-  ["non-expert_10", "Question", { q: "À la bibliothèque: Amélie qui cherche le livre Les Misérable à son ami Marc: \n Amélie: Comme le prof veut qu'on le lise, au fait:", as: "[Il est où, ce livre?", "Où est il, ce livre?"] }}],
-  ["expert_11", "Question", { q: "Nicole à son ami Marc, qui travaille dans le magazin: \n Nicole: Vu que c'est dans ton rayon, au fait:", as: "[Il coute à peu près combien, ce jean?", "Combien il coute à peu près, ce jean?"] }}],
-  ["non-expert_12", "Question", { q: "Nicole montre un jean à son ami Marc dans la vitrine \n Nicole: Vu que c'est parfait pour la soirée de samedi au fait:", as: "[Il coute à peu près combien, ce jean?", "Combien il coute à peu près, ce jean?"] }}],
-  ["expert_13", "Question", { q: "Adele à son amie Marie, qui prends des bonnes notes dans le cours: \n Adele: Comme je suis sûre que tu as bien écouté, au-fait:", as: "[Il y a quoi à reviser pour le prochain examen?", "Qu'est-ce qu'il y a à reviser pour le prochain examen?"] }}],
-  ["non-expert_14", "Question", { q: "Marie à son amie Adele, qui est parfois distraite: \n Marie: Comme j'étais pas là au dernier cours, au fait", as: "[Il y a quoi à reviser pour le prochain examen?", "Qu'est-ce qu'il y a à reviser pour le prochain examen?"] }}],
-  ["expert_15", "Question", { q: "Antoni à son ami Jean qui prend souvent le train:  \n Vu que tu as les horaires dans la main, dis-moi:", as: "[Il s'arrete où le train de dix heures?", "Où il s'arrete le train de dix heures?"] }}],
-  ["non-expert_16", "Question", { q: "Antoni à son ami Jean devant la gare: \n Vu qu'il faut que je parte toute suite, dis-moi", as: "[Il s'arrete où le train de dix heures?", "Où il s'arrete le train de dix heures?"] }}],
-  ["expert_17", "Question", { q: "Deux amis dans un restaurant: \n Vu que tu viens ici tous les jours, dis-moi:", as: "[Il coute combien, le plat du jour?", "Combien il coute, le plat du jour?"] }}],
-  ["non-expert_18", "Question", { q: "Deux amis dans un restaurant: \n Vu que j'ai pas trop faim:", as: "[Il coute combien, le plat du jour?", "Combien il coute, le plat du jour?"] }}]
-
+  ["expert_1", "Question", { q: "Un fils à son père qui rentre du marché: \n Le fils: Vu que tu as fait les courses pour le dîner, dis-moi", as: ["On va manger quoi ce soir?", "Qu'est-ce qu'on va manger ce soir"] }],
+["non-expert_2", "Question", { q: "Un fils à son père qui est rentré du boulot: \n Le fils: Vu que j'ai super faim, dis-moi:", as: ["On va manger quoi ce soir?", "Qu'est-ce qu'on va manger ce soir"] }],
+["expert_3", "Question", { q: "Une femme qui les clés de voiture à son mari \n La femme: Comme tu as rangé la voiture, dis-moi:", as: ["Elles sont oú, les clés?", "Où elles sont, les clés?"] }],
+["non-expert_4", "Question", { q: "Une femme qui les clés de voiture à son mari \n La femme: Comme je suis super pressée, dis-moi:", as: ["Elles sont oú, les clés?", "Où elles sont, les clés?"] }],
+["expert_5", "Question", { q: "Jean à son amie Margot qui a acheté une Honda Civic: \n Jean: Comme tu viens d'en acheter une, au-fait", as: ["Ça coute à peu près combien une voiture comme ca?", "Combien ça coute à peu près une voiture comme ça?"] }],
+["non-expert_6", "Question", { q: "Jean montre une Honda Civic dans la rue à son amie Margot. \n Jean: Comme j'ai vraiment besoin d'en acheter une, au-fait:", as: ["Ça coute à peu près combien une voiture comme ça?", "Combien ça coute à peu près une voiture comme ça?"] }],
+["expert_7", "Question", { q: "À propos du dernier scandale à la mairie, Jean à son ami qui est conseiller municipale \n Vu qu'ils parlent tous du ça, dis-moi:", as: ["Il a fait quoi, le maire?", "Qu'est-ce qu'il a fait le maire?"] }],
+["non-expert_8", "Question", { q: "À propos du dernier scandale à la mairie, Jean à son copain dans un bar: \n Vu qu'ils parlent tous du ça, dis-moi:", as: ["Il a fait quoi, le maire?", "Qu'est-ce qu'il a fait le maire?"] }],
+["expert_9", "Question", { q: "À la bibliothèque: Amélie qui cherche le livre Les Misérable à son ami Marc: \n Amélie: Comme tu bosses à la bibliothèque, au fait:", as: ["Il est où, ce livre?", "Où est il, ce livre?"] }],
+["non-expert_10", "Question", { q: "À la bibliothèque: Amélie qui cherche le livre Les Misérable à son ami Marc: \n Amélie: Comme le prof veut qu'on le lise, au fait:", as: ["Il est où, ce livre?", "Où est il, ce livre?"] }],
+["expert_11", "Question", { q: "Nicole à son ami Marc, qui travaille dans le magazin: \n Nicole: Vu que c'est dans ton rayon, au fait:", as: ["Il coute à peu près combien, ce jean?", "Combien il coute à peu près, ce jean?"] }],
+["non-expert_12", "Question", { q: "Nicole montre un jean à son ami Marc dans la vitrine \n Nicole: Vu que c'est parfait pour la soirée de samedi au fait:", as: ["Il coute à peu près combien, ce jean?", "Combien il coute à peu près, ce jean?"] }],
+["expert_13", "Question", { q: "Adele à son amie Marie, qui prends des bonnes notes dans le cours: \n Adele: Comme je suis sûre que tu as bien écouté, au-fait:", as: ["Il y a quoi à reviser pour le prochain examen?", "Qu'est-ce qu'il y a à reviser pour le prochain examen?"] }],
+["non-expert_14", "Question", { q: "Marie à son amie Adele, qui est parfois distraite: \n Marie: Comme j'étais pas là au dernier cours, au fait", as: ["Il y a quoi à reviser pour le prochain examen?", "Qu'est-ce qu'il y a à reviser pour le prochain examen?"] }],
+["expert_15", "Question", { q: "Antoni à son ami Jean qui prend souvent le train:  \n Vu que tu as les horaires dans la main, dis-moi:", as: ["Il s'arrete où le train de dix heures?", "Où il s'arrete le train de dix heures?"] }],
+["non-expert_16", "Question", { q: "Antoni à son ami Jean devant la gare: \n Vu qu'il faut que je parte toute suite, dis-moi", as: ["Il s'arrete où le train de dix heures?", "Où il s'arrete le train de dix heures?"] }],
+["expert_17", "Question", { q: "Deux amis dans un restaurant: \n Vu que tu viens ici tous les jours, dis-moi:", as: ["Il coute combien, le plat du jour?", "Combien il coute, le plat du jour?"] }],
+["non-expert_18", "Question", { q: "Deux amis dans un restaurant: \n Vu que j'ai pas trop faim:", as: ["Il coute combien, le plat du jour?", "Combien il coute, le plat du jour?"] }]
 
 ];
-
-/*
-d3.csv("stim1.csv").then(function(data) {
-  console.log(data[0]);
-});
-*/
