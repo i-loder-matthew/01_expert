@@ -127,7 +127,7 @@ var items = [
   ["expert_15", "Question", { q: "Antoni à son ami Jean qui prend souvent le train:  \n Vu que tu as les horaires dans la main, dis-moi:", as: "[Il s'arrete où le train de dix heures?", "Où il s'arrete le train de dix heures?"] }}],
   ["non-expert_16", "Question", { q: "Antoni à son ami Jean devant la gare: \n Vu qu'il faut que je parte toute suite, dis-moi", as: "[Il s'arrete où le train de dix heures?", "Où il s'arrete le train de dix heures?"] }}],
   ["expert_17", "Question", { q: "Deux amis dans un restaurant: \n Vu que tu viens ici tous les jours, dis-moi:", as: "[Il coute combien, le plat du jour?", "Combien il coute, le plat du jour?"] }}],
-  ["non-expert_18", "Question", { q: "Deux amis dans un restaurant: \n Vu que j'ai pas trop faim:", as: "[Il coute combien, le plat du jour?", "Combien il coute, le plat du jour?"] }}],
+  ["non-expert_18", "Question", { q: "Deux amis dans un restaurant: \n Vu que j'ai pas trop faim:", as: "[Il coute combien, le plat du jour?", "Combien il coute, le plat du jour?"] }}]
 
 
 ];
