@@ -9,7 +9,7 @@
 var shuffleSequence = seq("consent", "instructions", seq(startsWith("practice")), /* sepWith("sep", seq(shuffle(randomize(startsWith("filler")), shuffle(randomize(startsWith("formal")), randomize(startsWith("informal")))))),*/ "questionnaire");
 var centerItems = true;
 
-// var d3 = require('d3');
+var d3 = require('d3');
 
 var defaults = [
 
