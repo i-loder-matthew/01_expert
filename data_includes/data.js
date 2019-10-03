@@ -6,7 +6,7 @@
     filler -
 */
 
-var shuffleSequence = seq("consent", "instructions", seq(startsWith("practice")),  sepWith("sep", seq(shuffle(randomize(startsWith("expert")), randomize(startsWith("non-expert"))))), "questionnaire");
+var shuffleSequence = seq("consent", "instructions", seq(startsWith("practice")),  /*sepWith("sep", seq(shuffle(randomize(startsWith("expert")), randomize(startsWith("non-expert"))))),*/ "questionnaire");
 var centerItems = true;
 
 // var d3 = require('d3');
