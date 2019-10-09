@@ -110,7 +110,7 @@ var items = [
       ],
   */
 
-  ["expert_1", "Question", { q: "Un fils, à son père qui rentre du marché : \n Vu que tu as fait les courses pour le dîner, dis-moi ...", as: ["On va manger quoi ce soir?", "Qu'est-ce qu'on va manger ce soir"] }],
+  ["expert_1", "Question", { q: "<b>Un fils,</b>, à son père qui rentre du marché : \n Vu que tu as fait les courses pour le dîner, dis-moi ...", as: ["On va manger quoi ce soir?", "Qu'est-ce qu'on va manger ce soir"] }],
   ["non-expert_2", "Question", { q: "Un fils, à son père qui rentre du boulot : \n Vu que j'ai super faim, dis-moi ...", as: ["On va manger quoi ce soir?", "Qu'est-ce qu'on va manger ce soir"] }],
   ["expert_3", "Question", { q: "Une femme qui cherche les clés de la voiture à son mari : \n Comme tu as rangé la voiture hier soir, dis-moi ...", as: ["Elles sont oú, les clés?", "Où elles sont, les clés?"] }],
   ["non-expert_4", "Question", { q: "Une femme qui cherche les clés de la voiture à son mari : \n Comme je suis super pressée, dis-moi ...", as: ["Elles sont oú, les clés?", "Où elles sont, les clés?"] }],
