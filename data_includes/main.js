@@ -59,6 +59,9 @@ PennController.Template(
     ,
     newText("answer1", variable.Option1)
     ,
+    newCanvas("empty", 1, 20)
+      .print()
+    ,
     newText("answer2", variable.Option2)
     ,
     newSelector("text")
