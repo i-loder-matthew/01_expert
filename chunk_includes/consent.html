@@ -98,8 +98,13 @@ consent validation -->
   <td><i>J'ai lu l'information ci-dessus</i></td>
 </tr>
 <tr>
-<td><input name="consent", class = "obligatory", type="radio" value="yes" id="consentyes"/>
-      <label for="consentcx">Je consens</label></td>
+<td><table id="Scaling">
+	<tr>
+		 <td><input id="consent-yes" type="radio" name="consent" value="oui" class="obligatory"/><label>Je consens.</label></td>
+		 <td><input id="consent-no" type="radio" name="consent" value="non" class="obligatory"/><label>Je ne consens pas.</label></td>
+	</tr>
+</table>
+</td>
 </tr>
 <tr>
 <td colspan="2"><label class="error" for="consent"></label></td>
@@ -107,103 +112,6 @@ consent validation -->
 
 </table>
 
-
-<!--
-<h1> SOME QUESTIONS </h1>
-<table>
-<tr>
-<td colspan="2" style="width: 30em; padding-bottom: 2em;">
-<i>(The form below is just a rough example showing all of the input controls that work properly
-with Ibex.)</i>
-</td>
-</tr>
-
-question with obligatory answer that has to be a number
-<tr>
-  <td>What is your age?</td><td><input name="age" type="text" size="30" class="obligatory" /></td>
-</tr>
-<tr>
-<td colspan="2"><label class="error" for="age"></label></td>
-</tr>
-
- question with a small text box to answer, answer is obligatory
-<tr>
-  <td>What is your native language? </td><td><input name="language" type="text" size="30" class="obligatory" /></td>
-</tr>
-<tr>
-<td colspan="2"><label class="error" for="language"></label></td>
-</tr>
-
-question with a big text box to answer, answer is NOT obligatory
-<tr>
-  <td colspan="2">What other languages do you speak?</td>
-</tr>
-<tr>
-  <td colspan="2">
-    <textarea name="otherlang" rows="5" cols="40"></textarea>
-  </td>
-</tr>
-
-question with yes or no answer
-<tr>
-  <td>Have you ever taken a linguistics class?</td><td><input name="linclass" type="radio" value="yes" class="obligatory" id="linclassyes" /><label for="linclassyes">Yes</label>
-                   <input name="linclass" type="radio" value="no" id="linclassno"/>
-                   <label for="linclassno">No</label>
-</tr>
-<tr>
-<td colspan="2"><label class="error" for="linclass"></label></td>
-</tr>
-
-
-
-<tr>
-  <td>How often do you read: <i>(daily, weekly, occasionally, never)</i></td>
-</tr>
- fiction scale
-<tr>
-  <td>&nbsp &nbsp &nbsp Fiction: </td>
-  <td>
-     the buttons for the scalng option
-    <table id="Scaling">
-      <tr>
-         <td><label>Daily <input id="daily" type="radio" name="readingfic" value="daily" /></label></td>
-         <td><label><input type="radio" name="readingfic" value="weekly" /></label></td>
-         <td><label><input type="radio" name="readingfic" value="occasionally" /></label></td>
-         <td><label><input id="never" type="radio" name="readingfic" value="never" /> Never</label></td>
-      </tr>
-    </table>
-  </td>
-</tr>
-<tr>
-<td colspan="2"><label class="error" for="readingfic"></label></td>
-</tr>
-
-
-Non-fiction scale
-<tr>
-  <td>&nbsp &nbsp &nbsp Non-fiction: </td>
-  <td>
-    the buttons for the scalng option
-    <table id="Scaling">
-      <tr>
-         <td><label>Daily <input id="daily" type="radio" name="readingnonfic" value="daily" /></label></td>
-         <td><label><input type="radio" name="readingnonfic" value="weekly" /></label></td>
-         <td><label><input type="radio" name="readingnonfic" value="occasionally" /></label></td>
-         <td><label><input id="never" type="radio" name="readingnonfic" value="never" /> Never</label></td>
-      </tr>
-    </table>
-  </td>
-</tr>
-<tr>
-<td colspan="2"><label class="error" for="readingnonfic"></label></td>
-</tr>
-
- square checkbox that is not obligatory
-<tr>
-<td colspan="2" style="padding-bottom: 1em;"><input type="checkbox" name="credit" id="creditcx" /><label for="creditcx"> I am doing this experiment for credit</label></td>
-</tr>
-</table>
--->
 </form>
 
 </body>

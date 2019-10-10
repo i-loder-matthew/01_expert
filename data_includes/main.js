@@ -1,6 +1,6 @@
 PennController.ResetPrefix(null);
 
-PennController.Sequence("consent", "instructions", "practice1", "practice2", randomize("experiment"), "questionnaire")
+PennController.Sequence("consent", "instructions", "practice-message", "practice1", "practice2", randomize("experiment"), "questionnaire")
 
 PennController("consent",
   newHtml("consent", "consent.html")
@@ -76,24 +76,24 @@ PennController("practice2",
   newCanvas("empty", 1, 10)
     .print()
   ,
-  newText("Une maman, à sa copine :")
+  newText("Un québécois en protestant :")
   ,
   newCanvas("empty", 1, 10)
     .print()
   ,
-  newText("Je veux que mes enfants mangent sainement, mais ...")
+  newText("...")
   ,
   newCanvas("empty", 1, 25)
     .print()
   ,
-  newText("answer1", "Ils mangent souvent des bonbons")
+  newText("answer1", "Jamais, je ne dirais cela.")
     .settings.css("color", "blue")
     .settings.center()
   ,
   newCanvas("empty", 1, 15)
     .print()
   ,
-  newText("answer2", "Ils souvent mangent des bonbons")
+  newText("answer2", "Je dirais jamais ça.")
     .settings.css("color", "blue")
     .settings.center()
   ,
