@@ -107,10 +107,10 @@ PennController("practice2",
 );
 
 PennController("experiment-message",
-  newText("<p>Bravo! Alors on commence l'expérience.</p>")
+  newText("<p>Bravo! Alors on commence l'éxperience</p>")
     .print()
   ,
-  newButton("continue", "Suivant")
+  newButton("continue", "Cliquez suivant pour continuer")
       .print()
       .wait()
 );
