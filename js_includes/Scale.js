@@ -104,6 +104,8 @@ jqueryWidget: {
     _init: function () {
         var self = this;
 
+        this.utils = this.options._utils;
+
         this.cssPrefix = this.options._cssPrefix;
         this.finishedCallback = this.options._finishedCallback;
 
@@ -141,10 +143,10 @@ jqueryWidget: {
         this.scaleWidth = parseInt(this.scaleWidth);
         this.scaleHeight = parseInt(this.scaleHeight);
         this.handleWidth = parseInt(this.handleWidth);
-        this.handleHeight = parseInt(this.handleWidth);
+        this.handleHeight = parseInt(this.handleHeight);
         $bar.css('width', this.scaleWidth + 'px');
         $bar.css('height', this.scaleHeight + 'px');
-        $handle.css({ width: this.handleWith + 'px',
+        $handle.css({ width: this.handleWidth + 'px',
                       height: this.handleHeight + 'px' });
 
         $bar.append($handle);
@@ -160,7 +162,11 @@ jqueryWidget: {
 
         this.handleLeft = parseInt(this.scaleWidth / 2);
         this.fraction = 0.5;
-        this.setHandlePos();
+        t();
+        function t() {
+            self.setHandlePos();
+            self.utils.setTimeout(t, 100);
+        }
         $handle.css('background', rgbToS(this.getHandleColor()));
 
         this.setLinearGradient($bar, this.startColor, this.endColor);
@@ -230,8 +236,9 @@ jqueryWidget: {
         var barO = this.$bar.offset();
         var barLeft = barO.left;
         var barTop = barO.top;
-        barLeft += $(window).scrollLeft();
-        barTop += $(window).scrollTop();
+        //barLeft += $(window).scrollLeft();
+        //barTop += $(window).scrollTop();
+        return { top: barTop, left: barLeft };
     },
 
     setFraction: function (x) {
@@ -241,11 +248,11 @@ jqueryWidget: {
     setHandlePos: function () {
         var x = this.fraction * this.scaleWidth;
 
-        var barO = this.$bar.offset();
+        var barO = this.getBarO();
         var barLeft = barO.left;
         var barTop = barO.top;
-        barLeft += $(window).scrollLeft();
-        barTop += $(window).scrollTop();
+        //barLeft += $(window).scrollLeft();
+        //barTop += $(window).scrollTop();
         var hleft = (barLeft + parseInt(x) - parseInt(Math.round(this.handleWidth/2)));
         var htop = (barTop - parseInt(Math.round((this.handleHeight - this.scaleHeight)/2.0)));
         this.$handle.css('left', hleft + 'px');
