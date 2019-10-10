@@ -1,6 +1,6 @@
 PennController.ResetPrefix(null);
 
-PennController.Sequence("consent", "instructions", "practice-message", "practice1", "practice2", randomize("experiment"), "questionnaire")
+PennController.Sequence("consent", "instructions", "practice-message", "practice1", "practice2", "experiment-message", randomize("experiment"), "questionnaire")
 
 PennController("consent",
   newHtml("consent", "consent.html")
