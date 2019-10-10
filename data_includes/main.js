@@ -1,6 +1,6 @@
 PennController.ResetPrefix(null);
 
-PennController.Sequence("consent", "instructions", "practice", randomize("experiment"))
+PennController.Sequence("consent", "instructions", "practice1", "practice2", randomize("experiment"), "questionnaire")
 
 PennController("consent",
   newHtml("consent", "consent.html")
@@ -23,26 +23,84 @@ PennController("instructions",
         .wait()
 );
 
+PennController("practice-message",
+  newText("<p>Voici les exemples d'entraînement:</p>")
+  ,
+  newButton("continue", "Cliquez suivant pour continuer")
+      .print()
+      .wait()
+);
 
 PennController("practice1",
-  defaultText
+  defaultText.print()
+  ,
+  newText("<p><em>S'il vous plaît, lisez les phrases et choisissez celle qui vous semble la plus naturelle. <p>")
+  ,
+  newCanvas("empty", 1, 10)
     .print()
   ,
-  newText("<p>description<p>")
+  newText("Une maman, à sa copine :")
   ,
-  newText("variable.ContextText")
+  newCanvas("empty", 1, 10)
+    .print()
   ,
-  newText("variable.InfoState")
+  newText("Je veux que mes enfants mangent sainement, mais ...")
   ,
-  newText("<br></br>")
+  newCanvas("empty", 1, 25)
+    .print()
   ,
-  newText("answer1", "variable.Option1")
+  newText("answer1", "Ils mangent souvent des bonbons")
+    .settings.css("color", "blue")
+    .settings.center()
   ,
-  newText("answer2", "variable.Option2")
+  newCanvas("empty", 1, 15)
+    .print()
+  ,
+  newText("answer2", "Ils souvent mangent des bonbons")
+    .settings.css("color", "blue")
+    .settings.center()
   ,
   newSelector("text")
     .settings.add(getText("answer1"), getText("answer2"))
     .shuffle()
+
+    .settings.log()
+    .wait()
+)
+
+PennController("practice2",
+  defaultText.print()
+  ,
+  newText("<p><em>S'il vous plaît, lisez les phrases et choisissez celle qui vous semble la plus naturelle. <p>")
+  ,
+  newCanvas("empty", 1, 10)
+    .print()
+  ,
+  newText("Une maman, à sa copine :")
+  ,
+  newCanvas("empty", 1, 10)
+    .print()
+  ,
+  newText("Je veux que mes enfants mangent sainement, mais ...")
+  ,
+  newCanvas("empty", 1, 25)
+    .print()
+  ,
+  newText("answer1", "Ils mangent souvent des bonbons")
+    .settings.css("color", "blue")
+    .settings.center()
+  ,
+  newCanvas("empty", 1, 15)
+    .print()
+  ,
+  newText("answer2", "Ils souvent mangent des bonbons")
+    .settings.css("color", "blue")
+    .settings.center()
+  ,
+  newSelector("text")
+    .settings.add(getText("answer1"), getText("answer2"))
+    .shuffle()
+
     .settings.log()
     .wait()
 )
@@ -51,7 +109,7 @@ PennController.Template(
   variable => PennController("experiment",
     defaultText.print()
     ,
-    newText("<p><em>S'il vous plaît, choisissez la réponse qui vous semble la plus naturelle. <p>")
+    newText("<p><em>S'il vous plaît, lisez les phrases et choisissez celle qui vous semble la plus naturelle. <p>")
     ,
     newCanvas("empty", 1, 10)
       .print()
@@ -88,4 +146,5 @@ PennController.Template(
 
 PennController("questionnaire",
   newHtml("questionnaire", "questionnaire.html")
+    .print()
 )
