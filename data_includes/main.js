@@ -53,6 +53,9 @@ PennController.Template(
     ,
     newText("<p><em>S'il vous plaît, choisissez la réponse qui vous semble la plus naturelle. <p>")
     ,
+    newCanvas("empty", 1, 10)
+      .print()
+    ,
     newText(variable.ContextText)
     ,
     newCanvas("empty", 1, 10)
@@ -60,7 +63,7 @@ PennController.Template(
     ,
     newText(variable.InfoState)
     ,
-    newCanvas("empty", 1, 20)
+    newCanvas("empty", 1, 25)
       .print()
     ,
     newText("answer1", variable.Option1)
