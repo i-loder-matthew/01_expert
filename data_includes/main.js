@@ -27,8 +27,9 @@ PennController("practice-message",
   newText("<p>Voici les exemples d'entraînement:</p>")
     .print()
   ,
-  newButton("continue", "Cliquez suivant pour continuer")
+  newButton("continue", "Suivant")
       .print()
+      .settings.center()
       .wait()
 );
 
@@ -112,6 +113,7 @@ PennController("experiment-message",
   ,
   newButton("continue", "Cliquez suivant pour continuer")
       .print()
+      .settings.center()
       .wait()
 );
 
