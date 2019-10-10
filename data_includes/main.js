@@ -147,4 +147,8 @@ PennController.Template(
 PennController("questionnaire",
   newHtml("questionnaire", "questionnaire.html")
     .print()
+  ,
+  newButton("continue", "Cliquez suivant pour continuer")
+      .print()
+      .wait()
 )
