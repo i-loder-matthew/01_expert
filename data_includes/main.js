@@ -25,6 +25,7 @@ PennController("instructions",
 
 PennController("practice-message",
   newText("<p>Voici les exemples d'entraînement:</p>")
+    .print()
   ,
   newButton("continue", "Cliquez suivant pour continuer")
       .print()
