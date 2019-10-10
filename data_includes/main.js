@@ -58,11 +58,13 @@ PennController.Template(
     newText("<p>" + variable.InfoState + "</p>")
     ,
     newText("answer1", variable.Option1)
+      .settings.css("color", "blue")
     ,
     newCanvas("empty", 1, 20)
       .print()
     ,
     newText("answer2", variable.Option2)
+      .settings.css("color", "blue")
     ,
     newSelector("text")
       .settings.add(getText("answer1"), getText("answer2"))
