@@ -51,20 +51,28 @@ PennController.Template(
   variable => PennController("experiment",
     defaultText.print()
     ,
-    newText("<p><em>description<p>")
+    newText("<p><em>S'il vous plaît, choisissez la réponse qui vous semble la plus naturelle. <p>")
     ,
     newText(variable.ContextText)
     ,
-    newText("<p>" + variable.InfoState + "</p>")
+    newCanvas("empty", 1, 10)
+      .print()
     ,
-    newText("answer1", variable.Option1)
-      .settings.css("color", "blue")
+    newText(variable.InfoState)
     ,
     newCanvas("empty", 1, 20)
       .print()
     ,
+    newText("answer1", variable.Option1)
+      .settings.css("color", "blue")
+      .settings.center()
+    ,
+    newCanvas("empty", 1, 15)
+      .print()
+    ,
     newText("answer2", variable.Option2)
       .settings.css("color", "blue")
+      .settings.center()
     ,
     newSelector("text")
       .settings.add(getText("answer1"), getText("answer2"))
