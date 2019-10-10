@@ -104,7 +104,16 @@ PennController("practice2",
 
     .settings.log()
     .wait()
-)
+);
+
+PennController("experiment-message",
+  newText("<p>Bravo! Alors on commence l'expérience.</p>")
+    .print()
+  ,
+  newButton("continue", "Suivant")
+      .print()
+      .wait()
+);
 
 PennController.Template(
   variable => PennController("experiment",
