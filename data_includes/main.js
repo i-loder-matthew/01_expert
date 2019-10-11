@@ -1,6 +1,6 @@
 PennController.ResetPrefix(null);
 
-PennController.Sequence("consent", "instructions", "practice-message", "practice1", "practice2", "experiment-message", randomize("experiment"), "questionnaire")
+PennController.Sequence("consent", "instructions", "practice-message", "practice1", "practice2", "experiment-message", rshuffle(rshuffle("formal" , "informal"), rshuffle("expert", "non-expert")), "questionnaire")
 
 PennController("consent",
   newHtml("consent", "consent.html")
@@ -78,12 +78,12 @@ PennController("practice2",
   newCanvas("empty", 1, 10)
     .print()
   ,
-  newText("Un québécois en protestant :")
+  newText("Un étudiant à son copain étranger :")
   ,
   newCanvas("empty", 1, 10)
     .print()
   ,
-  newText("...")
+  newText("Ce n'est pas faux, mais ...")
   ,
   newCanvas("empty", 1, 25)
     .print()
@@ -108,17 +108,17 @@ PennController("practice2",
 );
 
 PennController("experiment-message",
-  newText("<p>Bravo! Alors on commence l'éxperience</p>")
+  newText("<p>Bravo! Alors maintenant on commence l'éxperience</p>")
     .print()
   ,
-  newButton("continue", "Cliquez suivant pour continuer")
+  newButton("continue", "Suivant")
       .print()
       .settings.center()
       .wait()
 );
 
 PennController.Template(
-  variable => PennController("experiment",
+  variable => PennController(variable.ContextType,
     defaultText.print()
     ,
     newText("<p><em>S'il vous plaît, lisez les phrases et choisissez celle qui vous semble la plus naturelle. <p>")
@@ -160,7 +160,7 @@ PennController("questionnaire",
   newHtml("questionnaire", "questionnaire.html")
     .print()
   ,
-  newButton("continue", "Cliquez suivant pour continuer")
+  newButton("continue", "SOUMETTRE")
       .print()
       .wait()
 )
