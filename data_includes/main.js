@@ -18,7 +18,7 @@ PennController("consent",
   ,
   newButton("continue", "Cliquez suivant pour continuer")
     .print()
-    .wait()
+    .wait( getVar("consent-check") == "consent-yes")
 );
 
 PennController("instructions",
