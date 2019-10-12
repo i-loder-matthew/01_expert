@@ -7,7 +7,7 @@ PennController("consent",
     .print()
   ,
   newFunction("consented", function() {
-    if (document.querySelector('input[name="consent"]:checked').value == "no") {
+    if (document.querySelector('input[name="consent-consent"]:checked').value == "no") {
       PennController.Sequence("consent");
       return 0;
     }
