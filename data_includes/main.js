@@ -6,23 +6,19 @@ PennController("consent",
   newHtml("consent", "consent.html")
     .print()
   ,
-  newFunction("consented", function() {
-    if (document.querySelector('input[name="consent-consent"]:checked').value == "no") {
-      PennController.Sequence("consent");
-      return 0;
-    }
-    return 0;
-  })
+  newButton("consent-yes", "Je consens.")
+    .print()
+  ,
+  newButton("consent-no", "Je ne consens pas.")
+    .print()
+  ,
+  newSelector("consent-check")
+    .settings.add(getButton("consent-yes"), getButton("consent-no"))
+    .wait()
   ,
   newButton("continue", "Cliquez suivant pour continuer")
     .print()
-    .wait(
-        getHtml("consent").test.complete()
-            .failure( getHtml("consent").warn() )
-        ,
-        getFunction("consented")
-          .call()
-    )
+    .wait()
 );
 
 PennController("instructions",
