@@ -15,11 +15,12 @@ PennController("consent",
   newSelector("consent-check")
     .settings.add(getButton("consent-yes"), getButton("consent-no"))
     .wait()
+    .settings.disableClicks()
     .settings.log()
   ,
   newButton("continue", "Cliquez suivant pour continuer")
     .print()
-    .wait( getSelector("consent-check").test.selected("consent-yes") )
+    .wait( getButton("consent-yes").test.clicked() )
 );
 
 PennController("instructions",
