@@ -12,7 +12,7 @@ PennController("consent",
       return 0;
     }
     return 0;
-  )
+  })
   ,
   newButton("continue", "Cliquez suivant pour continuer")
     .print()
