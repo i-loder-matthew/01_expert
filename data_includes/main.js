@@ -15,8 +15,13 @@ PennController("consent",
   newSelector("consent-check")
     .settings.add(getButton("consent-yes"), getButton("consent-no"))
     .wait()
-    .settings.disableClicks()
     .settings.log()
+  ,
+  getButton("consent-yes")
+    .settings.hidden()
+  ,
+  getButton("consent-no")
+    .settings.hidden()
   ,
   newButton("continue", "Cliquez suivant pour continuer")
     .print()
