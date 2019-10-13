@@ -99,6 +99,7 @@ PennController("practice1",
         .print()
     )
   ,
+
   getVar( "response")
     .test.is(getText("answer1"))
     .success(
