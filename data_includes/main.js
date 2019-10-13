@@ -89,11 +89,11 @@ PennController("practice1",
   getSelector("text")
     .test.selected(getText("answer1"))
     .success(
-      newText("yup", "This is right")
+      newText("success", "Bravo! C'est correct.")
         .print()
     )
     .failure(
-      newText("nope", "this is wrong")
+      newText("failure", "Non! Ce n'est pas correct.")
         .print()
     )
   ,
@@ -141,16 +141,14 @@ PennController("practice2",
     .wait()
     .setVar("response")
   ,
-  newFunction("feedback", function() {return getVar("response") == "answer1"})
-  ,
-  getFunction("feedback")
-    .test.is(true)
+  getSelector("text")
+    .test.selected(getText("answer1"))
     .success(
       newText("success", "Bravo! C'est parfait!")
         .print()
     )
     .failure(
-      newText("failure", "Non! C'est possible, mais ça ne semble plus formelle que l'autre choix? ")
+      newText("failure", "Non! C'est possible, mais ça ne semble plus formelle que l'autre choix?")
         .print()
     )
   ,
