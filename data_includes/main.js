@@ -1,6 +1,6 @@
 PennController.ResetPrefix(null);
 
-PennController.Sequence("consent", "instructions", "practice-message", "practice1", "practice2", "experiment-message", rshuffle(rshuffle("formal" , "informal"), rshuffle("expert", "non-expert")), "questionnaire")
+PennController.Sequence("consent", "instructions", "practice-message", "practice1", "practice2", "experiment-message", rshuffle(rshuffle("some-info" , "no-info"), rshuffle("expert", "non-expert")), "questionnaire")
 
 PennController("consent",
   newHtml("consent", "consent.html")
@@ -85,6 +85,7 @@ PennController("practice1",
     .settings.log()
     .wait()
     .setVar("response")
+    .settings.log(getVar("response"))
   ,
   newFunction("feedback", function() {return getVar("response") === 'answer1'})
   ,
