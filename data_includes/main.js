@@ -41,6 +41,7 @@ PennController("practice-message",
   newText("<p>Voici les exemples d'entraînement:</p>")
     .print()
   ,
+
   newButton("continue", "Suivant")
       .print()
       .settings.center()
@@ -79,8 +80,20 @@ PennController("practice1",
   newSelector("text")
     .settings.add(getText("answer1"), getText("answer2"))
     .shuffle()
-
     .settings.log()
+    .wait()
+    .test.selected("answer1")
+    .success(
+      newText("success", "Bravo! C'est corrêt!")
+        .print()
+    )
+    .failure(
+      newText("failure", "Non! Ça c'est pas corrêt!")
+        .print()
+    )
+  ,
+  newButton("continue", "Cliquez suivant pour continuer")
+    .print()
     .wait()
 )
 
