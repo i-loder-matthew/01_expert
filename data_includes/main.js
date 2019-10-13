@@ -99,6 +99,10 @@ PennController("practice1",
         .print()
     )
   ,
+  newText("justchecking")
+    .settings.text( getVar("response") )
+    .print()
+  ,
   newButton("continue", "Cliquez suivant pour continuer")
     .print()
     .wait()
