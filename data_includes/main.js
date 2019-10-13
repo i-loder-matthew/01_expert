@@ -84,6 +84,8 @@ PennController("practice1",
     .shuffle()
     .settings.log()
     .wait()
+  ,
+  getSelecter("text")
     .setVar("response")
   ,
   getVar( "response")
