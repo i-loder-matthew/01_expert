@@ -99,8 +99,6 @@ PennController("practice1",
         .print()
     )
   ,
-  getVar("response").settings.log()
-  ,
   newButton("continue", "Cliquez suivant pour continuer")
     .print()
     .wait()
