@@ -1,4 +1,5 @@
 PennController.ResetPrefix(null);
+PennController.DebugOff();
 
 PennController.Sequence("consent", "instructions", "practice-message", "practice1", "practice2", "experiment-message", rshuffle(rshuffle("some-info" , "no-info"), rshuffle("expert", "non-expert")), "questionnaire")
 
