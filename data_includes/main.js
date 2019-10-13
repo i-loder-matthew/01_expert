@@ -86,7 +86,7 @@ PennController("practice1",
     .wait()
     .setVar("response")
   ,
-  newFunction("feedback", function() {return getVar("response") == "answer1"})
+  newFunction("feedback", function() {return getVar("response") === 'answer1'})
   ,
   getFunction("feedback")
     .test.is(true)
@@ -102,7 +102,7 @@ PennController("practice1",
   newButton("continue", "Cliquez suivant pour continuer")
     .print()
     .wait()
-)
+).log("selection", getVar("response"))
 
 PennController("practice2",
   defaultText.print()
