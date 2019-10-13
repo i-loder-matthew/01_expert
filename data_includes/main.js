@@ -86,9 +86,8 @@ PennController("practice1",
     .wait()
     .setVar("response")
   ,
-  getVar( "response")
-    .test.is(null)
-    .print()
+  getSelector("text")
+    .test.selected("answer1")
     .success(
       newText("yup", "This is right")
         .print()
