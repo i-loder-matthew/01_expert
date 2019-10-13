@@ -102,7 +102,7 @@ PennController("practice1",
   newButton("continue", "Cliquez suivant pour continuer")
     .print()
     .wait()
-).log("selection", getVar("response"))
+)
 
 PennController("practice2",
   defaultText.print()
