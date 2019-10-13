@@ -102,7 +102,7 @@ PennController("practice1",
   ,*/
 
   getVar( "response")
-    .test.is(getVar("response"))
+    .test.is(0)
     .success(
       newText("yup", "This is right")
         .print()
