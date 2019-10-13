@@ -99,9 +99,12 @@ PennController("practice1",
         .print()
     )
   ,
-  newText("justchecking")
-    .settings.text( getVar("response") )
-    .print()
+  getVar( "response")
+    .test.is(getText("answer1ß"))
+    .success(
+      newText("yup", "This is right")
+        .print()
+    )
   ,
   newButton("continue", "Cliquez suivant pour continuer")
     .print()
