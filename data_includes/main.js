@@ -84,6 +84,7 @@ PennController("practice1",
     .shuffle()
     .settings.log()
     .wait()
+    .setVar("response")
   ,
   getVar( "response")
     .test.is()
