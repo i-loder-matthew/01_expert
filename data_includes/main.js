@@ -91,7 +91,7 @@ PennController("practice1",
   getFunction("feedback")
     .test.is(true)
     .success(
-      newText("success", "Bravo! C'est corrêt!")
+      newText("Bravo! C'est corrêt!")
         .print()
     )
     .failure(
