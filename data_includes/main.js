@@ -86,6 +86,7 @@ PennController("practice1",
     .wait()
     .setVar("response")
   ,
+  /*
   newFunction("feedback", function() {return getVar("response") === 'answer1'})
   ,
   getFunction("feedback")
@@ -98,12 +99,16 @@ PennController("practice1",
       newText("failure", "Non! Ça n'est pas corrêt!")
         .print()
     )
-  ,
+  ,*/
 
   getVar( "response")
     .test.is(getText("answer1"))
     .success(
       newText("yup", "This is right")
+        .print()
+    )
+    .failure(
+      newText("nope", "this is wrong")
         .print()
     )
   ,
