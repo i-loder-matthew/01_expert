@@ -77,18 +77,25 @@ PennController("practice1",
     .settings.css("color", "blue")
     .settings.center()
   ,
+  newVar("response")
+  ,
   newSelector("text")
     .settings.add(getText("answer1"), getText("answer2"))
     .shuffle()
     .settings.log()
     .wait()
-    .test.selected("answer1")
+    .setVar("response")
+  ,
+  newFunction("feedback", function() {return getVar("response") == "answer1"})
+  ,
+  getFunction("feedback")
+    .test.is(true)
     .success(
       newText("success", "Bravo! C'est corrêt!")
         .print()
     )
     .failure(
-      newText("failure", "Non! Ça c'est pas corrêt!")
+      newText("failure", "Non! Ça n'est pas corrêt!")
         .print()
     )
   ,
