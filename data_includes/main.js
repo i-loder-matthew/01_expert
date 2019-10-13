@@ -85,10 +85,6 @@ PennController("practice1",
     .settings.log()
     .wait()
   ,
-  getSelector("text")
-    .setVar("response")
-    .print()
-  ,
   getVar( "response")
     .test.is()
     .print()
