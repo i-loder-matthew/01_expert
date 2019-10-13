@@ -111,6 +111,7 @@ PennController("practice1",
       newText("nope", "this is wrong")
         .print()
     )
+    .settings.log()
   ,
   newButton("continue", "Cliquez suivant pour continuer")
     .print()
