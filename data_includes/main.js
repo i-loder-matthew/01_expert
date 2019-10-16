@@ -52,7 +52,7 @@ PennController("practice-message",
 PennController("practice1",
   defaultText.print()
   ,
-  newText("<p><em>S'il vous plaît, lisez les phrases et choisissez celle qui vous semble la plus naturelle. <p>")
+  newText("<p><em>S'il vous plaît, lisez les phrases et en vous mettant à la place du locuteur choisissez celle qui vous semble la plus naturelle. <p>")
   ,
   newCanvas("empty", 1, 10)
     .print()
@@ -106,7 +106,7 @@ PennController("practice1",
 PennController("practice2",
   defaultText.print()
   ,
-  newText("<p><em>S'il vous plaît, lisez les phrases et choisissez celle qui vous semble la plus naturelle. <p>")
+  newText("<p><em>S'il vous plaît, lisez les phrases et en vous mettant à la place du locuteur choisissez celle qui vous semble la plus naturelle. <p>")
   ,
   newCanvas("empty", 1, 10)
     .print()
@@ -149,7 +149,7 @@ PennController("practice2",
         .print()
     )
     .failure(
-      newText("failure", "Non! C'est possible, mais ça ne semble plus formelle que l'autre choix?")
+      newText("failure", "C'est possible, mais ça ne semble plus formel que l'autre choix?")
         .print()
     )
   ,
@@ -159,7 +159,7 @@ PennController("practice2",
 );
 
 PennController("experiment-message",
-  newText("<p>Bravo! Alors maintenant on commence l'éxperience</p>")
+  newText("<p>Bravo! Alors maintenant on commence l'expérience</p>")
     .print()
   ,
   newButton("continue", "Suivant")
@@ -172,7 +172,7 @@ PennController.Template(
   variable => PennController(variable.ContextType,
     defaultText.print()
     ,
-    newText("<p><em>S'il vous plaît, lisez les phrases et choisissez celle qui vous semble la plus naturelle. <p>")
+    newText("<p><em>S'il vous plaît, lisez les phrases et en vous mettant à la place du locuteur choisissez celle qui vous semble la plus naturelle. <p>")
     ,
     newCanvas("empty", 1, 10)
       .print()
