@@ -60,6 +60,8 @@ df.all <- results %>%
   ) %>%
   select(id, condition, value, item)
 
+## CLEAN UP TARGET DATA
+
 df.target <- df.all %>%
   filter(
     condition == "expert" | condition == "non-expert"
@@ -72,7 +74,37 @@ percent_in_situ = df.target %>%
   group_by(condition) %>%
   summarise('c1' = mean(c1))
 
-## Manipulate data
+by_participant1 = df.target %>%
+  group_by(condition, id) %>%
+  summarise('in-situ' = mean(c1))
 
+by_item = df.target %>%
+  group_by(item) %>%
+  summarise('in-situ' = mean(c1))
+
+df.all2 = df.all %>%
+  mutate(
+    'c1' = value == 'answer1'
+  )
+
+by_item_all = df.all2 %>%
+  group_by(item) %>%
+  summarise('in-situ' = mean(c1))
+
+
+## ANALYZE DATA
+
+expertise.model = lmer(c1 ~ condition + (1|id) + (1|item), data=df.target)
+
+expertise.null = lmer(c1 ~ 1 + (1|id) + (1|item), data=df.target)
+
+summary(expertise.model)
+summary(expertise.null)
+
+anova(expertise.null, expertise.model)
+
+know.simple = lm(c1 ~ condition, data=df.target)
+
+summary(know.simple)
 
 
