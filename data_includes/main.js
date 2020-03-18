@@ -1,7 +1,7 @@
 PennController.ResetPrefix(null);
 PennController.DebugOff();
 
-PennController.Sequence("consent", "instructions", "practice-message", "practice1", "practice2", "experiment-message", rshuffle(rshuffle("partial-info" , "no-info"), rshuffle("expert", "non-expert")), "questionnaire")
+PennController.Sequence("consent", "instructions", "practice-message", "practice1", "practice2", "experiment-message", rshuffle(rshuffle("partial-info" , "no-info"), rshuffle("expert", "non-expert")), "questionnaire", "final")
 
 PennController("consent",
   newHtml("consent", "consent.html")
@@ -215,4 +215,14 @@ PennController("questionnaire",
   newButton("continue", "SOUMETTRE")
       .print()
       .wait()
-)
+);
+
+
+PennController("final",
+  newText("Merci pour votre participation!")
+    .print()
+  ,
+  newButton("continue", "<p><a href='https://app.prolific.co/submissions/complete?cc=3131BC13'> Cliquez ici pour valider votre participation</a></p>")
+    .print()
+    .wait()
+);
