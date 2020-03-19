@@ -222,7 +222,7 @@ PennController("final",
   newText("Merci pour votre participation!")
     .print()
   ,
-  newButton("continue", "<p><a href='https://app.prolific.co/submissions/complete?cc=3131BC13'> Cliquez ici pour valider votre participation</a></p>")
+  newButton("continue", "<p><a href='https://app.prolific.co/submissions/complete?cc=6565DD45'> Cliquez ici pour valider votre participation</a></p>")
     .print()
     .wait()
 );
